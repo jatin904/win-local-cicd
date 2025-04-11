@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/jatin904/win-local-cicd.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 echo 'Building the app...'
